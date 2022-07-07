@@ -1,0 +1,7 @@
+.full-width {
+    width: calc( 100% - 50px );
+    padding: 5px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin: 0 10px;
+}

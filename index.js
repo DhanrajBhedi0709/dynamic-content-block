@@ -4,7 +4,7 @@ document.getElementById( 'sitelink' ).addEventListener( 'change', function() {
     console.log(url);
     var code = `<script runat="server" language="JavaScript">
     Platform.Load("Core","1");
-    var responseContent = HTTP.Get(${url});
+    var responseContent = HTTP.Get('${url}');
     var result = Platform.Function.ParseJSON( responseContent.Content );
     if( result.length > 0 ) {
     Write( '<table width="100%" align="center" bordercolor="white" cellpadding="0" cellspacing="0" style="border-style: hidden; border-collapse: collapse; table-layout: fixed;">' );
